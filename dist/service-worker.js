@@ -1,4 +1,4 @@
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/5.1.4/workbox-sw.js", "precache-manifest.f87ff42d7e170a9fcc241cd31ee24ca5.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts("https://lsustc.github.io/githubpages-demo/dist/workbox-sw.js", "precache-manifest.8f392ddcbe951be912e99804961844d7.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 /* eslint-disable no-undef*/
 if (workbox) {
@@ -8,7 +8,7 @@ if (workbox) {
 }
 
 workbox.core.setCacheNameDetails({
-  prefix: 'ochase-search',
+  prefix: 'aif10',
   suffix: 'v1.0.0'
 })
 workbox.core.skipWaiting() // 强制等待中的 Service Worker 被激活
@@ -43,7 +43,7 @@ workbox.routing.registerRoute(
   new workbox.strategies.StaleWhileRevalidate({
     cacheName: 'images',
     plugins: [
-      new workbox.expiration.ExpirationPlugin({
+      new workbox.expiration.Plugin({
         maxEntries: 60,
         maxAgeSeconds: 30 * 24 * 60 * 60 // 设置缓存有效期为30天
       })
@@ -57,7 +57,7 @@ workbox.routing.registerRoute(
   new workbox.strategies.StaleWhileRevalidate({
     cacheName: 'cdn-images',
     plugins: [
-      new workbox.expiration.ExpirationPlugin({
+      new workbox.expiration.Plugin({
         maxEntries: 60,
         maxAgeSeconds: 5 * 24 * 60 * 60 // 设置缓存有效期为5天
       })

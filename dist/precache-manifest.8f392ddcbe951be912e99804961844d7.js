@@ -86,5 +86,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
     "url": "robots.txt"
+  },
+  {
+    "revision": "6e1e47d706556eac8524f396e785d4bb",
+    "url": "workbox-sw.js"
   }
 ]);
