@@ -1,4 +1,4 @@
-importScripts("https://lsustc.github.io/githubpages-demo/dist/workbox-sw.js", "precache-manifest.8f392ddcbe951be912e99804961844d7.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts("https://lsustc.github.io/githubpages-demo/dist/workbox-sw.js", "precache-manifest.b5a404fc90a8146f2e601e9cee208917.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 /* eslint-disable no-undef*/
 if (workbox) {
